@@ -14,15 +14,18 @@ public class Palindrome {
 
 	while (number != 0){
 	
-	remainder += number % 10;
+	remainder = number % 10;
+	reverse += remainder;
+	reverse *= 10;
 	number = number / 10;
-	reverse = remainder * 10;
 	}
-	if (userInput == reverse){
-		System.out.print( reverse + " Input is a palindrome");
+	int reversedNumber = (reverse /10);
+	
+	if (userInput == reversedNumber){
+		System.out.print( reversedNumber + " is a palindrome");
 	}
 	else{
-		System.out.print(reverse + " Input is not a palindrome");
+		System.out.print(reversedNumber + " is not a palindrome");
 	}
 	
 	}
