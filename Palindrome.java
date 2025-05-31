@@ -19,6 +19,7 @@ public class Palindrome {
 	reverse *= 10;
 	number = number / 10;
 	}
+
 	int reversedNumber = (reverse /10);
 	
 	if (userInput == reversedNumber){
